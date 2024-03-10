@@ -12,5 +12,21 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html' // Path to your src/index.html
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'images' // Output directory for images
+                        }
+                    }
+                ]
+            }
+        ]
+    }
 };
