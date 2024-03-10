@@ -16,7 +16,7 @@
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderContact: () => (/* binding */ renderContact)\n/* harmony export */ });\nfunction renderContact(body){\r\n    \r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant-website/./src/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderContact: () => (/* binding */ renderContact)\n/* harmony export */ });\nfunction renderContact(body) {\r\n    const main = document.createElement(\"main\");\r\n    const mainHeading = document.createElement(\"h2\");\r\n    mainHeading.textContent = \"Contact Information\";\r\n    main.appendChild(mainHeading);\r\n    const contactInfo = document.createElement(\"p\");\r\n    contactInfo.innerHTML = \"Email: info@example.com<br>Phone: 123-456-7890<br>Address: 123 Main Street, City, Country\";\r\n    main.appendChild(contactInfo);\r\n    body.appendChild(main);\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-website/./src/contact.js?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderMenu: () => (/* binding */ renderMenu)\n/* harmony export */ });\nfunction renderMenu(body){\r\n\r\n}\r\n\r\n\n\n//# sourceURL=webpack://restaurant-website/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   renderMenu: () => (/* binding */ renderMenu)\n/* harmony export */ });\nfunction renderMenu(body){\r\n    const main = document.createElement(\"main\");\r\n    const mainHeading = document.createElement(\"h2\");\r\n    mainHeading.textContent = \"Menu Items\";\r\n    main.appendChild(mainHeading);\r\n    const itemList = document.createElement(\"ul\");\r\n    const items = [\"Item 1\", \"Item 2\", \"Item 3\"];\r\n    items.forEach(item => {\r\n        const listItem = document.createElement(\"li\");\r\n        listItem.textContent = item;\r\n        itemList.appendChild(listItem);\r\n    });\r\n    main.appendChild(itemList);\r\n    body.appendChild(main);\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack://restaurant-website/./src/menu.js?");
 
 /***/ })
 
