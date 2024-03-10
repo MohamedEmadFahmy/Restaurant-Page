@@ -1,3 +1,5 @@
+import ManeImage from "./imgs/mane.jpeg";
+
 function renderMenu(body){
     const main = document.createElement("main");
     const mainHeading = document.createElement("h2");
@@ -12,6 +14,11 @@ function renderMenu(body){
     });
     main.appendChild(itemList);
     body.appendChild(main);
+    
+    const myIcon = new Image();
+    myIcon.src = ManeImage;
+
+    body.appendChild(myIcon);
 }
 
 export {renderMenu};
