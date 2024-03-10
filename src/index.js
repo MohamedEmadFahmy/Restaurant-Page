@@ -32,4 +32,4 @@ function eraseContent(){
 }
 
 
-renderHome();
+renderHome(content);
