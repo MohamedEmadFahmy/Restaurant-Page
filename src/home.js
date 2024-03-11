@@ -1,9 +1,5 @@
 function renderHome(body){
-        const header = document.createElement("header");
-        header.innerHTML = "<h1>Welcome to Our Website</h1>";
-        body.appendChild(header);
 
-    
         const main = document.createElement("main");
         const mainContent = document.createElement("p");
         mainContent.textContent = "This is the home page content. Welcome to our website!";
